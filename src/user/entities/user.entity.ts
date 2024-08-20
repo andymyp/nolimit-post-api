@@ -2,8 +2,6 @@ import {
   Table,
   Column,
   Model,
-  IsUUID,
-  PrimaryKey,
   Unique,
   IsEmail,
   DataType,
@@ -13,9 +11,11 @@ import {
 
 @Table
 export class User extends Model {
-  @IsUUID(4)
-  @PrimaryKey
-  @Column
+  @Column({
+    type: DataType.UUID,
+    defaultValue: DataType.UUIDV4,
+    primaryKey: true,
+  })
   id: string;
 
   @Column
