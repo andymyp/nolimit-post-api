@@ -56,7 +56,8 @@ This project built with Node.js, Nest.js, Sequalize, JWT, MySQL, and Swagger
    ```sh
    npm install
    ```
-3. Create `.env` file from `.env.example`
+3. Create MySQL database. e.g. `nolimit_post`
+4. Create `.env` file from `.env.example`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
