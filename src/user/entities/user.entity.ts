@@ -7,7 +7,9 @@ import {
   DataType,
   CreatedAt,
   UpdatedAt,
+  HasMany,
 } from 'sequelize-typescript';
+import { Post } from 'src/post/entities/post.entity';
 
 @Table
 export class User extends Model {
@@ -30,10 +32,13 @@ export class User extends Model {
   password: string;
 
   @CreatedAt
-  @Column({ field: 'created_at' })
+  @Column
   createdAt: Date;
 
   @UpdatedAt
-  @Column({ field: 'updated_at' })
+  @Column
   updatedAt: Date;
+
+  @HasMany(() => Post)
+  posts: Post[];
 }
