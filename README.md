@@ -66,15 +66,15 @@ This project built with Node.js, Nest.js, Sequalize, JWT, MySQL, and Swagger
 
 1. Run
 
-   ```bash
+   ```sh
    # development
-   $ npm run start
+   npm run start
 
    # watch mode
-   $ npm run start:dev
+   npm run start:dev
 
    # production mode
-   $ npm run start:prod
+   npm run start:prod
    ```
 
 2. API Docs
